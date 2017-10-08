@@ -1,0 +1,14 @@
+.alert {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  font: normal 35px/2 Impact, Charcoal, sans-serif;
+  color: rgba(255,66,66,1);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  background: #f7f7f7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5) ;
+}

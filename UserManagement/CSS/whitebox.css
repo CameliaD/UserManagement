@@ -1,0 +1,30 @@
+.whitebox {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 100%-2px;
+  padding: 19px;
+  overflow: hidden;
+  border: 5px solid rgba(125,175,216,1);
+  -webkit-border-radius: 13px;
+  border-radius: 13px;
+  font: normal 22px/1 Georgia, serif;
+  color: rgba(5,4,4,1);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  letter-spacing: 3px;
+  background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 0, rgba(244,248,255,1) 100%), rgba(255,255,255,1);
+  background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0, rgba(244,248,255,1) 100%), rgba(255,255,255,1);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0, rgba(244,248,255,1) 100%), rgba(255,255,255,1);
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,0.4) inset;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0.4) inset;
+  text-shadow: 2px 1px 6px rgba(0,0,0,0.2) ;
+}

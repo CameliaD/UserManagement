@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="CSS/button.css" type="text/css">
+<link rel="stylesheet" href="CSS/bluebox.css" type="text/css">
+<link rel="stylesheet" href="CSS/inputbox.css" type="text/css">
+
+<div id="main" style="text-align:center" >
+	<div id="login" class="bluebox">
+		<img src="<?php echo htmlspecialchars($avatarpath); ?>" style="width:200px;height:225px;"/> <br/><br/>
+		<form action="" method="post" enctype="multipart/form-data">
+			<div style="font-size: 25px;">Username </div>
+			<div style=""><input id="name" name="username" value="<?php echo htmlspecialchars($username); ?>" type="text" class="inputbox">  </input><br/><br/></div>
+			<div style="font-size: 25px;">Password </div>
+			<div style=""><input id="password" name="password" value="<?php echo htmlspecialchars($password); ?>" type="password" class="inputbox"><br/><br/></div>
+			<div style="font-size: 25px;">Email</div>
+			<div style=""><input id="email" name="email" value="<?php echo htmlspecialchars($email); ?>" type="text" class="inputbox"> <br/><br/></div>
+			<div style="font-size: 25px;">Phone</div>
+			<div style=""><input id="phone" name="phone" value="<?php echo htmlspecialchars($phone); ?>" type="text" class="inputbox"> <br/><br/></div>
+			<div style="font-size: 25px;">First Name </div>
+			<div style=""><input id="firstname" name="firstname" value="<?php echo htmlspecialchars($firstname); ?>" type="text" class="inputbox"> <br/><br/></div>
+			<div style="font-size: 25px;">Last Name</div>
+			<div style=""><input id="lastname" name="lastname" value="<?php echo htmlspecialchars($lastname); ?>" class="inputbox"> </div> <br/>
+			<div style="font-size: 25px;">Description</div>
+			<div style=""><textarea id="description" name="description" class="inputbox"><?php echo htmlspecialchars($description); ?></textarea> </div> <br/>
+			<div style="font-size: 25px;">Profile Picture</div>
+			<div style=""><input type="file" name="image" /></div>
+			<br/>
+			<input name="submit" type="submit" value=" Save " class="button"/>
+		</form>
+	</div>
+	<br/>
+	<br/>
+	<button type="button" class="button" align="center" onclick="deactivate()" >Deactivate the account!</button>
+	<br/>
+	<br/>
+	<br/>
+</div>
+<script type="text/javascript">
+function deactivate()
+{
+	var r = confirm("Are you sure that do you want to deactivate the account?");
+	if (r == true) {
+		window.location="deactivation.php";
+	} else {
+	}
+}
+</script>
+
+

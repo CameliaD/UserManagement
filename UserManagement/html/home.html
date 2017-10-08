@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<link rel="stylesheet" href="CSS/h1.css" type="text/css">
+		<link rel="stylesheet" href="CSS/h2.css" type="text/css">
+	</head>
+	<body>
+		<?php
+			require_once "html/menu.html";
+		?>
+		<h1>Welcome to TGA users management application!</h1><br/><br/>
+		<?php
+		if(!isset($_SESSION['user']))
+		{
+			echo '<h2 align="center">Login</h2>';
+			require_once "html/loginbox.html";
+			echo '<h2 align="center">Signup</h2>';
+			require_once "html/signupbox.html";
+			logIn();
+			signUp();
+		}		
+		?>
+	</body>
+</html>

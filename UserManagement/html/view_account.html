@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>View Account</title>
+		<link rel="stylesheet" href="CSS/h1.css" type="text/css">
+		<link rel="stylesheet" href="CSS/h2.css" type="text/css">
+		<link rel="stylesheet" href="CSS/td.css" type="text/css">
+		<link rel="stylesheet" href="CSS/whitebox.css" type="text/css">
+
+	</head>
+	<body>
+		<?php
+			require_once "html/menu.html";
+		?>
+		<h1>View Account</h1><br/><br/>
+		<table align="center" class="whitebox" style="text-align:left;padding:20px;width:50%"> 
+			<?php
+				view();
+			?>
+		</table>
+	</body>
+</html>
